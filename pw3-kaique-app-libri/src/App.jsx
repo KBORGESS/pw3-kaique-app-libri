@@ -1,22 +1,24 @@
-
+/* Importa o CSS*/
 import './App.css'
-import CardBook from './Components/CardBooks'
+
+/* Importa o componente de card de livro*/
+import CardBooks from './Components/CardBooks'
+
+import Button from './Components/Button'
+
+
+import NavBar from './Components/layout/NavBar'
+
+/* Importa o arquivo da imagem da capa do livro*/
+import capalivro from './assets/livros/cavernas_aco.jpg'
+
+
 function App() {
-  
 
   return (
     <>
-        <CardBook
-        titulo ='a bala que faz curva'
-        autor =  'arma torta'
-       />
-        
-        <CardBook
-        titulo = 'tunma da monica'
-        autor = 'mauricio de souza'
-        />
-
-        
+    <NavBar></NavBar>
+    
     </>
   )
 }
