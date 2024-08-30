@@ -1,0 +1,9 @@
+.Home_container{
+    width: 100px;
+    display: flex;
+    flex-direction:  colum;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+
+}

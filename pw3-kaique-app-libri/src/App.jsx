@@ -1,23 +1,28 @@
-/* Importa o CSS*/
 import './App.css'
-
-/* Importa o componente de card de livro*/
-import CardBooks from './Components/CardBooks'
-
-import Button from './Components/Button'
-
-
 import NavBar from './Components/layout/NavBar'
-
-/* Importa o arquivo da imagem da capa do livro*/
-import capalivro from './assets/livros/cavernas_aco.jpg'
-
+import Container from './Components/layout/Container'
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import Home from './Components/pages/Home'
+import CreateBooks from './Components/pages/CreateBooks'
+import ListBoks from './Components/pages/ListBooks'
 
 function App() {
 
   return (
     <>
-    <NavBar></NavBar>
+     {/*estrutura de navegação*/}
+     <BrowserRouter>
+     <Container>
+      
+      <Routes>
+        <Route path='/' element = {<NavBar/>}></Route>
+        <Route path='/' element ={<Home/>}></Route>
+        <Route path= '/CreateBooks' element ={<CreateBooks/>} ></Route>
+        <Route path='/ListBooks' element ={<ListBoks/>} ></Route>
+      </Routes>
+      
+     </Container>
+     </BrowserRouter>
     
     </>
   )
