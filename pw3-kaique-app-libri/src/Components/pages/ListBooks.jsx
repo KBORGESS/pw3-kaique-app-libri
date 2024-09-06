@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./ListBoks.modules.css";
+import style from "./ListBooks.module.css";
 
 const ListBoks = ()=> {
 

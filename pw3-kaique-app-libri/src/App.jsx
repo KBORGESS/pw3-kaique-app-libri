@@ -1,7 +1,7 @@
 import './App.css'
 import NavBar from './Components/layout/NavBar'
 import Container from './Components/layout/Container'
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Components/pages/Home'
 import CreateBooks from './Components/pages/CreateBooks'
 import ListBoks from './Components/pages/ListBooks'
@@ -15,10 +15,11 @@ function App() {
      <Container>
       
       <Routes>
-        <Route path='/' element = {<NavBar/>}></Route>
+        <Route path='/' element = {<NavBar/>}>
         <Route path='/' element ={<Home/>}></Route>
-        <Route path= '/CreateBooks' element ={<CreateBooks/>} ></Route>
-        <Route path='/ListBooks' element ={<ListBoks/>} ></Route>
+        <Route path='/listBook' element ={<ListBoks/>} ></Route>
+        <Route path= '/createBook' element ={<CreateBooks/>} ></Route>
+        </Route>
       </Routes>
       
      </Container>
