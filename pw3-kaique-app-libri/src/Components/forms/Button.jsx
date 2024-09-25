@@ -1,12 +1,11 @@
-import style from './Button.module.css'
+import styles from '../forms/Button.module.css';
 
-const Button = ({label})=> {
+function Button ({rotulo}){
     return(
-        <div>
-            <Button className= {style.buttonContainer}>{label}</Button>
-            
+        <div className={styles.button}>
+            <button>{rotulo}</button>
         </div>
     )
 }
 
-export default Button;
+export default Button
